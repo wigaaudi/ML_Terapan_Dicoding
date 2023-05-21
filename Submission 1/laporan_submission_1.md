@@ -48,15 +48,15 @@ Berikut adalah penjelasan singkat tentang masing-masing kolom dalam dataset:
 
 -Default: Kolom ini adalah target variabel yang menunjukkan apakah seorang pelanggan memiliki risiko kredit yang tinggi (1) atau rendah (0). Ini adalah kolom yang ingin diprediksi menggunakan model machine learning.
 
-Beberapa teknik visualisasi data telah diterapkan dalam EDA. Berikut adalah beberapa langkah yang dilakukan:
+### Beberapa teknik visualisasi data telah diterapkan dalam EDA. Berikut adalah beberapa langkah yang dilakukan:
 
-Histogram:
+- Histogram:
 Dilakukan visualisasi histogram untuk melihat distribusi variabel-variabel numerik dalam dataset. Histogram memberikan gambaran tentang sebaran nilai pada setiap variabel.
 
-Heatmap Korelasi:
+- Heatmap Korelasi:
 Dibuat heatmap korelasi untuk melihat hubungan antara variabel-variabel numerik. Heatmap memberikan informasi tentang sejauh mana variabel-variabel saling berkorelasi.
 
-Pairplot:
+- Pairplot:
 Dibuat pairplot untuk melihat hubungan antara variabel-variabel numerik secara keseluruhan. Pairplot memungkinkan untuk melihat pola korelasi dan distribusi variabel dalam satu visualisasi.
 
 Melalui visualisasi data tersebut, dapat diperoleh pemahaman tentang distribusi variabel, pola korelasi antara variabel, serta adanya outlier atau anomali data. EDA membantu dalam memahami karakteristik data, mengidentifikasi pola, dan mengeksplorasi hubungan antar variabel. Hal ini memberikan wawasan yang berharga dalam membangun model prediksi risiko kredit.
