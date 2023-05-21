@@ -30,7 +30,7 @@ Berdasarkan problem statement sebelumnya, maka adapun goals yang ingin dicapai d
 Tingkat akurasi: Mengukur sejauh mana model dapat mengklasifikasikan pelanggan dengan benar menjadi kategori risiko kredit yang sesuai.
 
 ## Data Understanding
-Dalam proyek ini, kami menggunakan dataset Credit Risk yang terdiri dari 5 kolom dan 2000 baris dan dapat diunduh dari Kaggle melalui tautan berikut: https://www.kaggle.com/datasets/upadorprofzs/credit-risk.
+Dalam proyek ini, penulis menggunakan dataset Credit Risk yang terdiri dari 5 kolom dan 2000 baris dan dapat diunduh dari Kaggle melalui tautan berikut: https://www.kaggle.com/datasets/upadorprofzs/credit-risk.
 
 Dataset ini mencakup informasi tentang pelanggan kredit dan target yang merupakan variabel default yang menunjukkan apakah seorang pelanggan memiliki risiko kredit yang tinggi atau rendah.
 
