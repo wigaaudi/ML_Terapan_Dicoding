@@ -127,6 +127,3 @@ Berdasarkan hasil proyek, model Random Forest memiliki akurasi train sebesar 100
 
 Dengan akurasi yang tinggi pada data test, kedua model mampu memberikan prediksi yang akurat dalam memprediksi risiko kredit. Model Random Forest memperoleh akurasi yang sedikit lebih tinggi dibandingkan dengan model KNN, menunjukkan kemampuannya dalam mengklasifikasikan data dengan lebih baik.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
