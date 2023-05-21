@@ -34,7 +34,6 @@ Dalam proyek ini, penulis menggunakan dataset Credit Risk yang terdiri dari 5 ko
 
 Dataset ini mencakup informasi tentang pelanggan kredit dan target yang merupakan variabel default yang menunjukkan apakah seorang pelanggan memiliki risiko kredit yang tinggi atau rendah.
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
 
 ### Variabel-variabel pada Dataset Credit Risk adalah sebagai berikut:
 Berikut adalah penjelasan singkat tentang masing-masing kolom dalam dataset:
