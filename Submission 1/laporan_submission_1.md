@@ -10,10 +10,6 @@ Proyek credit risk bertujuan untuk mengembangkan model prediksi risiko kredit ya
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
-
 ### Problem Statements
 
 Berdasarkan latar belakang yang sudah dibahas sebelumnya, maka problem statement untuk proyek ini adalah:
