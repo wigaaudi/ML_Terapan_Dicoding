@@ -65,22 +65,18 @@ Tahapan-tahapan tersebut dilakukan untuk mempersiapkan data agar siap digunakan 
 Berikut adalah tahapan-tahapan yang dilakukan untuk membangun model sistem rekomendasi dalam menyelesaikan permasalahan:
 
 1. Membangun Matrix TF-IDF:
-
   - Menggunakan TfidfVectorizer untuk menghitung nilai TF-IDF (Term Frequency-Inverse Document Frequency) dari data genres.
   - Matrix TF-IDF ini akan digunakan sebagai representasi fitur dari film-film dalam dataset.
 
 2. Menghitung Similarity Matrix:
-
   - Menggunakan cosine_similarity untuk menghitung similarity antara setiap pasangan film dalam dataset berdasarkan matrix TF-IDF.
   - Similarity matrix ini akan digunakan sebagai dasar untuk menentukan tingkat kesamaan antara film-film.
 
 3.Membangun Model Rekomendasi:
-
   - Menggunakan similarity matrix untuk menghasilkan rekomendasi film.
   - Membuat fungsi film_recommendations yang akan menerima input berupa nama film dan menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film tersebut.
 
 4. Menampilkan Top-N Recommendation:
-
   - Menggunakan fungsi film_recommendations untuk menghasilkan top-N rekomendasi film.
   - Output akan berupa daftar film rekomendasi yang disusun berdasarkan tingkat popularitas.
 
@@ -90,6 +86,7 @@ Kelebihan:
 
 Metode cosine similarity memberikan perhitungan kesamaan yang sederhana dan efektif untuk mengukur kesamaan antara film-film.
 Dengan menggunakan metode ini, kita dapat dengan cepat menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film yang diberikan.
+
 Kekurangan:
 
 Metode cosine similarity tidak mempertimbangkan konteks atau fitur lain dari film selain dari data genre.
