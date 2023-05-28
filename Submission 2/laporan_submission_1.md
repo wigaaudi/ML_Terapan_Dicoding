@@ -61,7 +61,7 @@ Dalam tahap Data Preparation, beberapa teknik yang dilakukan pada dataset "tmdb_
 5. Menghapus data film yang memiliki genre kosong.
 Tahapan-tahapan tersebut dilakukan untuk mempersiapkan data agar siap digunakan dalam tahap model development. Dengan mengubah format kolom "genres" menjadi list dan menghapus data film yang memiliki genre kosong, kita dapat memastikan kebersihan dan konsistensi data sebelum melanjutkan ke tahap development.
 
-## Modeling
+## Modeling and Result
 Berikut adalah tahapan-tahapan yang dilakukan untuk membangun model sistem rekomendasi dalam menyelesaikan permasalahan:
 
 1. Membangun Matrix TF-IDF:
@@ -82,15 +82,29 @@ Berikut adalah tahapan-tahapan yang dilakukan untuk membangun model sistem rekom
 
 Dalam tahapan ini, telah disajikan satu solusi rekomendasi berdasarkan similarity matrix dan penggunaan metode cosine similarity. Solusi ini memungkinkan untuk mendapatkan rekomendasi film yang memiliki tingkat kesamaan yang tinggi dengan film yang diberikan.
 
+Berikut adalah contoh output dari model content-based filtering dengan top-5 rekomendasi film yang diurutkan berdasarkan popularitas:
+
+|   |                                     title |                                  genres | popularity |   |
+|--:|------------------------------------------:|----------------------------------------:|-----------:|---|
+| 0 |                              Man of Steel | Action Adventure Fantasy ScienceFiction |  99.398009 |   |
+| 1 |                          Superman Returns | Adventure Fantasy Action ScienceFiction |  57.925623 |   |
+| 2 |                                  Superman | Action Adventure Fantasy ScienceFiction |  48.507081 |   |
+| 3 |                             The Wolverine | Action ScienceFiction Adventure Fantasy |  15.953444 |   |
+| 4 | Beastmaster 2: Through the Portal of Time | Action Adventure Fantasy ScienceFiction |   1.478505 |   |
+
+Rekomendasi film-film ini didasarkan pada tingkat kesamaan genre dengan film "Avatar" dan popularitas film tersebut.
+
 Kelebihan:
 
-Metode cosine similarity memberikan perhitungan kesamaan yang sederhana dan efektif untuk mengukur kesamaan antara film-film.
-Dengan menggunakan metode ini, kita dapat dengan cepat menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film yang diberikan.
+-Metode cosine similarity memberikan perhitungan kesamaan yang sederhana dan efektif untuk mengukur kesamaan antara film-film.
+-Dengan menggunakan metode ini, model dapat dengan cepat menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film yang diberikan.
 
 Kekurangan:
 
-Metode cosine similarity tidak mempertimbangkan konteks atau fitur lain dari film selain dari data genre.
-Tidak ada personalisasi yang dilakukan dalam rekomendasi, sehingga rekomendasi film sama untuk setiap pengguna.
+- Metode cosine similarity tidak mempertimbangkan konteks atau fitur lain dari film selain dari data genre.
+- Tidak ada personalisasi yang dilakukan dalam rekomendasi, sehingga rekomendasi film sama untuk setiap pengguna.
+
+Dengan mempertimbangkan kelebihan dan kekurangan tersebut, algoritma content-based filtering dengan menggunakan metode cosine similarity dapat cocok digunakan dalam proyek ini karena dapat memberikan rekomendasi film yang memiliki genre serupa dengan film yang diberikan. Namun, perlu diperhatikan bahwa metode ini tidak mempertimbangkan faktor-faktor personalisasi atau preferensi pengguna lainnya. Jika personalisasi dan preferensi pengguna menjadi faktor penting, algoritma collaborative filtering mungkin perlu dipertimbangkan sebagai solusi alternatif.
 
 ## Evaluation
 Dalam proyek ini, penulis menggunakan metrik evaluasi sistem rekomendasi yang dikenal sebagai recommender system precision.
@@ -99,7 +113,7 @@ Dalam proyek ini, penulis menggunakan metrik evaluasi sistem rekomendasi yang di
 
 Recommender system precision mengukur sejauh mana film-film yang direkomendasikan secara tepat kepada pengguna. Dalam konteks ini, kita ingin memastikan bahwa film-film yang direkomendasikan kepada pengguna benar-benar relevan dengan film "Cavite" yang menjadi acuan.
 
-Dalam tabel rekomendasi film di bawah ini, kita menampilkan beberapa film yang memiliki kesamaan genre dengan "Cavite":
+Dalam tabel rekomendasi film di bawah ini, menampilkan beberapa film yang memiliki kesamaan genre dengan "Cavite":
 
 |   |              title |               genres | popularity |
 |--:|-------------------:|---------------------:|-----------:|
