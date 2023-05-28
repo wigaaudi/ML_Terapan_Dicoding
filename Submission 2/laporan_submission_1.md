@@ -65,20 +65,20 @@ Tahapan-tahapan tersebut dilakukan untuk mempersiapkan data agar siap digunakan 
 Berikut adalah tahapan-tahapan yang dilakukan untuk membangun model sistem rekomendasi dalam menyelesaikan permasalahan:
 
 1. Membangun Matrix TF-IDF:
-  - Menggunakan TfidfVectorizer untuk menghitung nilai TF-IDF (Term Frequency-Inverse Document Frequency) dari data genres.
-  - Matrix TF-IDF ini akan digunakan sebagai representasi fitur dari film-film dalam dataset.
+ - Menggunakan TfidfVectorizer untuk menghitung nilai TF-IDF (Term Frequency-Inverse Document Frequency) dari data genres.
+ - Matrix TF-IDF ini akan digunakan sebagai representasi fitur dari film-film dalam dataset.
 
 2. Menghitung Similarity Matrix:
-  - Menggunakan cosine_similarity untuk menghitung similarity antara setiap pasangan film dalam dataset berdasarkan matrix TF-IDF.
-  - Similarity matrix ini akan digunakan sebagai dasar untuk menentukan tingkat kesamaan antara film-film.
+ - Menggunakan cosine_similarity untuk menghitung similarity antara setiap pasangan film dalam dataset berdasarkan matrix TF-IDF.
+ - Similarity matrix ini akan digunakan sebagai dasar untuk menentukan tingkat kesamaan antara film-film.
 
 3.Membangun Model Rekomendasi:
-  - Menggunakan similarity matrix untuk menghasilkan rekomendasi film.
-  - Membuat fungsi film_recommendations yang akan menerima input berupa nama film dan menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film tersebut.
+ - Menggunakan similarity matrix untuk menghasilkan rekomendasi film.
+ - Membuat fungsi film_recommendations yang akan menerima input berupa nama film dan menghasilkan rekomendasi film berdasarkan tingkat kesamaan dengan film tersebut.
 
 4. Menampilkan Top-N Recommendation:
-  - Menggunakan fungsi film_recommendations untuk menghasilkan top-N rekomendasi film.
-  - Output akan berupa daftar film rekomendasi yang disusun berdasarkan tingkat popularitas.
+ - Menggunakan fungsi film_recommendations untuk menghasilkan top-N rekomendasi film.
+ - Output akan berupa daftar film rekomendasi yang disusun berdasarkan tingkat popularitas.
 
 Dalam tahapan ini, telah disajikan satu solusi rekomendasi berdasarkan similarity matrix dan penggunaan metode cosine similarity. Solusi ini memungkinkan untuk mendapatkan rekomendasi film yang memiliki tingkat kesamaan yang tinggi dengan film yang diberikan.
 
@@ -101,12 +101,13 @@ Recommender system precision mengukur sejauh mana film-film yang direkomendasika
 
 Dalam tabel rekomendasi film di bawah ini, kita menampilkan beberapa film yang memiliki kesamaan genre dengan "Cavite":
 
-|Title|	Genres|	Popularity|
-|The Circle	|Drama, Foreign|	1.193779|
-|Aberdeen|	Drama, Comedy, Foreign|	1.068819|
-|The Holy Girl|	Drama, Foreign|	0.684881|
-|Pandaemonium|	Drama, Foreign|	0.165367|
-|The Other Conquest|	Drama, Foreign|	0.015597|
+|   |              title |               genres | popularity |
+|--:|-------------------:|---------------------:|-----------:|
+| 0 |         The Circle |        Drama Foreign |   1.193779 |
+| 1 |           Aberdeen | Drama Comedy Foreign |   1.068819 |
+| 2 |      The Holy Girl |        Drama Foreign |   0.684881 |  
+| 3 |       Pandaemonium |        Drama Foreign |   0.165367 |   
+| 4 | The Other Conquest |        Drama Foreign |   0.015597 |   
 
 Berdasarkan tabel ini, penulis dapat melakukan evaluasi dengan menghitung precision. Precision dihitung dengan membandingkan jumlah film yang relevan dengan "Cavite" dalam rekomendasi dengan jumlah total film yang direkomendasikan.
 
