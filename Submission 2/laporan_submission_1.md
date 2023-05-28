@@ -47,7 +47,7 @@ Variabel atau fitur pada dataset TMDB Movie Metadata adalah sebagai berikut:
 -vote_average: Nilai rata-rata voting film (dalam bentuk bilangan desimal).
 -vote_count: Jumlah voting yang diberikan pada film (dalam bentuk bilangan bulat).
 
-##Visualisasi Data
+## Visualisasi Data
 ![image](https://github.com/wigaaudi/ML_Terapan_Dicoding/assets/116898134/8406d4e3-d101-40ef-952a-d8e1bb6e5944)
  Berdasarkan visualisasi di atas, dapat diketahui bahwa film dengan tingkat popularitas tertinggi adalah film "Minions" yang menduduki peringkat pertama, sementara film "Big Hero 6" berada di peringkat kesepuluh dalam daftar film dengan tingkat popularitas tertinggi.
  
